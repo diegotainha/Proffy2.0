@@ -37,6 +37,7 @@ yarn --version
 
 #### Expo
 
+Para projeto mobile.
 
 - By YARN
 ```
@@ -56,8 +57,68 @@ expo --version
 
 Criando o App
 
+```
+npx create-react-app web --template typescript
+```
 
+Dependêcnias do projeto WEB
+
+- react-router-dom
+```
+yarn add @types/react-router-dom -D
+```
+
+Observação: pacotes @types podem ser instaladas somente como dependência de desenvolvimento "-D".
 
 ### Projeto SERVER
 
+
+Criando do zero (observação: não  necessário executar os comandos abaixo caso o projeto já exista)
+Crie a pasta do servidor.
+```
+mkdir server
+```
+```
+yarn init -Y
+```
+```
+yarn tsc --init
+```
+
+No arquivo tsconfig.json mude o valor da propriedade "target" para "target": "es2017".
+
+Dependêcnias do projeto SERVER
+
+- ts-node-dev: executa o servidor e observa alterações.
+
+```
+yarn add ts-node-dev -D
+```
+- express
+```
+yarn add @types/express -D
+```
+- knex: QueryBuilder para conexção de bancos
+```
+yarn add knex sqlite3
+```
+
+
+
 ### Projeto MOBILE
+
+Criando o projeto mobile.
+
+```
+expo init mobile
+```
+Escolha o template: Black (TypeScript).
+
+Intalação das fontes do google: https://github.com/expo/google-fonts
+
+Crie a pasta @types e o arquivo index.d.ts com o conteúdo:
+```
+declare module '*.png';
+```
+Isso irá permitir o uso de arquivos PNG.
+

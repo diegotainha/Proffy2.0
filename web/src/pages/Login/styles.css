@@ -1,0 +1,127 @@
+.page-login {
+    height: 100vh;
+    width: 100vw;
+    color: var(--color-text-in-primary);
+    display: grid;
+}
+
+.logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    border: 1px solid red;
+}
+
+.sub-logo-content {
+    border: 1px solid;
+}
+
+.login-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-login-content {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    align-items: flex-end;
+}
+
+/* .sub-login-content div{
+    height: 50%;
+} */
+
+.login-content h1 {
+    color: var(--color-text-title);
+}
+
+.login-content h1 + div {
+    margin-top: 2rem;
+}
+
+.login-content .input-block label {
+    color: var(--color-text-base)
+}
+
+.logo-content h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+.login-content button {
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 3.2rem;
+}
+
+.login-content button:hover {
+    background: var(--color-secondary-dark);
+}
+
+.links-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text-complement);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.check-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-content label {
+    margin-left: 0.8rem;
+}
+
+.login-footer {
+    margin-bottom: 6rem;
+}
+
+.login-content main footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 6.4rem
+}
+
+.login-content main footer p {
+    font-size: 1.2rem;
+}
+
+.sub-footer {
+    
+}
+
+@media (min-width: 1100px){
+    .page-login {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo-content {
+        /* background: var(--color-primary); */
+    }
+
+    .login-content {
+        /* max-width: 400px; */
+    }
+}   

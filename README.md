@@ -115,6 +115,9 @@ expo init mobile
 Escolha o template: Black (TypeScript).
 
 Intalação das fontes do google: https://github.com/expo/google-fonts
+```
+expo install expo-font @expo-google-fonts/archivo @expo-google-fonts/poppins
+```
 
 Crie a pasta @types e o arquivo index.d.ts com o conteúdo:
 ```
